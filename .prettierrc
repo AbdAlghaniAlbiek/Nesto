@@ -1,0 +1,14 @@
+{
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "allowPrens": "avoid",
+  "tabWidth": 4,
+  "useTabs": true,
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "rangeStart": 0,
+  "proseWrap": "preserve",
+  "endOfLine": "auto",
+  "embeddedLanguageFormatting": "auto"
+}
