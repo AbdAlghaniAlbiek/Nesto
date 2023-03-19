@@ -3,6 +3,6 @@
 	"yearlyTargets": true,
 	"TicketsStatistics": true,
 	"latestNews": true,
-	"latestTaska": false,
+	"latestTasks": false,
 	"topSearchItems": true
 }

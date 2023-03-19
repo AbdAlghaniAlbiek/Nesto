@@ -7,20 +7,23 @@ export class DashboardController {
 
 	@Get('')
 	@Render('dashboard')
-	public index() {
+	public async index() {
 		return {
-			welcome: this.dashboardService.welcomeData(),
-			yearlyTargets: this.dashboardService.yearlyTargetsData(),
-			ticketsStatistics: this.dashboardService.ticketsStatisticsData(),
-			latestNews: this.dashboardService.latestNewsData(),
-			latestTasks: this.dashboardService.latestTasksData(),
-			topSearchItems: this.dashboardService.topSearchItemsData(),
-			latestUploads: this.dashboardService.latestUploadsData(),
-			lastProjctProgress: this.dashboardService.lastProjctProgressData(),
-			reminders: this.dashboardService.remindersData(),
-			lastPost: this.dashboardService.lastPostData(),
-			socialMediaStats: this.dashboardService.socialMediaStatsData(),
-			projects: this.dashboardService.projectsData()
+			welcome: await this.dashboardService.welcomeData(),
+			yearlyTargets: await this.dashboardService.yearlyTargetsData(),
+			ticketsStatistics:
+				await this.dashboardService.ticketsStatisticsData(),
+			latestNews: await this.dashboardService.latestNewsData(),
+			latestTasks: await this.dashboardService.latestTasksData(),
+			topSearchItems: await this.dashboardService.topSearchItemsData(),
+			latestUploads: await this.dashboardService.latestUploadsData(),
+			lastProjctProgress:
+				await this.dashboardService.lastProjctProgressData(),
+			reminders: await this.dashboardService.remindersData(),
+			lastPost: await this.dashboardService.lastPostData(),
+			socialMediaStats:
+				await this.dashboardService.socialMediaStatsData(),
+			projects: await this.dashboardService.projectsData()
 		};
 	}
 }

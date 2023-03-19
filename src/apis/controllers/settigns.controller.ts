@@ -7,14 +7,14 @@ export class SettingsController {
 
 	@Get('')
 	@Render('settings')
-	public getSettingsData() {
+	public async getSettingsData() {
 		return {
-			siteControl: this.settingService.siteControlData(),
-			generalInfo: this.settingService.generalInfoData(),
-			securityInfo: this.settingService.securityInfoData(),
-			socialInfo: this.settingService.socialInfoData(),
-			widgetsControl: this.settingService.widgetsControlData(),
-			backupManager: this.settingService.backupManagerData()
+			siteControl: await this.settingService.siteControlData(),
+			generalInfo: await this.settingService.generalInfoData(),
+			securityInfo: await this.settingService.securityInfoData(),
+			socialInfo: await this.settingService.socialInfoData(),
+			widgetsControl: await this.settingService.widgetsControlData(),
+			backupManager: await this.settingService.backupManagerData()
 		};
 	}
 }

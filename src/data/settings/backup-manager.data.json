@@ -5,7 +5,7 @@
 		"monthly": false
 	},
 	"backupServer": {
-		"migaman": true,
+		"megaman": true,
 		"zero": false,
 		"sigma": false
 	}

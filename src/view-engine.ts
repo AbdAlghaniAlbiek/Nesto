@@ -21,8 +21,9 @@ const helpers = {
 	fullname: (firstname: string, lastname: string) =>
 		`${firstname} ${lastname}`,
 	projectStatus: (status: string) => {
-		if (status === ProjectStatus.Completed) return 'bg-orange';
-		else if (status === ProjectStatus.InProgress) return 'bg-green';
-		else return 'bg-red';
+		if (status === ProjectStatus.Completed) return 'bg-green';
+		else if (status === ProjectStatus.InProgress) return 'bg-blue';
+		else if (status === ProjectStatus.Rejected) return 'bg-red';
+		else return 'bg-orange';
 	}
 };

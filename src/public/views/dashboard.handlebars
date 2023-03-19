@@ -1,14 +1,15 @@
 <div class='content w-full'>
-	<h1 class='p-relative'>Dashboard</h1>
+	<h1 class='p-relative gap-20'>Dashboard</h1>
 	<div class='wrapper d-grid gap-20'>
 		<!-- Start Welcome Widget -->
 		<div class='welcome bg-white rad-10 txt-c-mobile block-mobile'>
 			<div class='intro p-20 d-flex space-between bg-eee'>
 				<div>
-					<h2 class='m-0'>{{welcome.firstname}}</h2>
-					<p class='c-grey mt-5'>{{welcome.lastname}}</p>
+
+					<h2 class='m-0'>Welcome</h2>
+					<p class='c-grey mt-5'>{{welcome.firstname}}</p>
 				</div>
-				<img class='hide-mobile' src='imgs/welcome.png' alt='' />
+				<img class='hide-mobile' src='images/welcome.png' alt='' />
 			</div>
 			<img src='{{welcome.image}}' alt='' class='avatar' />
 			<div class='body txt-c d-flex p-20 mt-20 mb-20 block-mobile'>
@@ -29,6 +30,7 @@
 				href='/profile'
 				class='visit d-block fs-14 bg-blue c-white w-fit btn-shape'
 			>Profile</a>
+
 		</div>
 		<!-- End Welcome Widget -->
 
@@ -38,7 +40,7 @@
 			<p class='mt-0 mb-20 c-grey fs-15'>
 				Write A Draft For Your Ideas
 			</p>
-			<form>
+			<form style="margin-bottom: 0;">
 				<input
 					class='d-block mb-20 w-full p-10 b-none bg-eee rad-6'
 					type='text'
@@ -89,12 +91,12 @@
 					<span class='fs-14 c-grey'>Projects</span>
 					<span
 						class='d-block mt-5 mb-10 fw-bold'
-					>{{yearlyTargets.money.number}}</span>
+					>{{yearlyTargets.projects.number}}</span>
 					<div class='progress p-relative'>
 						<span class='bg-orange orange' style='width: 55%'>
 							<span
 								class='bg-orange'
-							>{{yearlyTargets.money.precentage}}%</span>
+							>{{yearlyTargets.projects.precentage}}%</span>
 						</span>
 					</div>
 				</div>
@@ -107,12 +109,12 @@
 					<span class='fs-14 c-grey'>Team</span>
 					<span
 						class='d-block mt-5 mb-10 fw-bold'
-					>{{yearlyTargets.money.number}}</span>
+					>{{yearlyTargets.team.number}}</span>
 					<div class='progress p-relative'>
 						<span class='bg-green green' style='width: 75%'>
 							<span
 								class='bg-green'
-							>{{yearlyTargets.money.precentage}}%</span>
+							>{{yearlyTargets.team.precentage}}%</span>
 						</span>
 					</div>
 				</div>
@@ -190,8 +192,7 @@
 		<div class='tasks p-20 bg-white rad-10'>
 			<h2 class='mt-0 mb-20'>Latest Tasks</h2>
 			{{#each latestTasks}}
-				{{#if isDone}}
-					<div class='task-row between-flex done'>
+					<div  {{#if isDone}} class='task-row between-flex done' {{/if}} class='task-row between-flex'>
 						<div class='info'>
 							<h3 class='mt-0 mb-5 fs-15'>
 								{{task}}
@@ -202,19 +203,6 @@
 						</div>
 						<i class='fa-regular fa-trash-can delete'></i>
 					</div>
-				{{else}}
-					<div class='task-row between-flex'>
-						<div class='info'>
-							<h3 class='mt-0 mb-5 fs-15'>
-								{{task}}
-							</h3>
-							<p class='m-0 c-grey'>
-								{{explaination}}
-							</p>
-						</div>
-						<i class='fa-regular fa-trash-can delete'></i>
-					</div>
-				{{/if}}
 			{{/each}}
 		</div>
 		<!-- End Tasks -->
@@ -222,14 +210,17 @@
 		<!-- Start Top Search Word Widget -->
 		<div class='search-items p-20 bg-white rad-10'>
 			<h2 class='mt-0 mb-20'>Top Search Items</h2>
-			{{#each}}
-				<div class='items-head d-flex space-between c-grey mb-10'>
+			<div class="items-head d-flex space-between c-grey mb-10">
+              <div>Keyword</div>
+              <div>Search Count</div>
+            </div>
+			{{#each topSearchItems}}
+				<div class='items d-flex space-between pt-15 pb-15'>
 					<div>{{techSection}}</div>
-					<div>{{count}}</div>
+					<div class="bg-eee fs-13 btn-shape">{{count}}</div>
 				</div>
 			{{/each}}
 		</div>
-
 		<!-- End Top Search Word Widget -->
 
 		<!-- Start Latest Uploads Widget -->
@@ -252,13 +243,13 @@
 		</div>
 		<!-- End Latest Uploads Widget -->
 
+		
 		<!-- Start Last Project Progress Widget -->
 		<div class='last-project p-20 bg-white rad-10 p-relative'>
 			<h2 class='mt-0 mb-20'>Last Project Progress</h2>
 			<ul class='m-0 p-relative'>
 				{{#each lastProjctProgress}}
-					{{#with completedStatus}}
-						{{#if isCompleted}}
+					{{#if isCompleted}}
 							<li class='mt-25 d-flex align-center done'>
 								{{progress}}
 							</li>
@@ -273,7 +264,6 @@
 								</li>
 							{{/if}}
 						{{/if}}
-					{{/with}}
 				{{/each}}
 			</ul>
 			<img
@@ -349,6 +339,7 @@
 		</div>
 		<!-- End Reminders Widget -->
 
+		
 		<!-- Start Latest Post Widget -->
 		<div class='latest-post p-20 bg-white rad-10 p-relative'>
 			<h2 class='mt-0 mb-25'>Latest Post</h2>
@@ -380,6 +371,7 @@
 		</div>
 		<!-- End Latest Post Widget -->
 
+		
 		<!-- Start Social Media Stats Widget -->
 		<div class='social-media p-20 bg-white rad-10 p-relative'>
 			<h2 class='mt-0 mb-25'>Social Media Stats</h2>
@@ -451,100 +443,6 @@
 							</td>
 						</tr>
 					{{/each}}
-					<tr>
-						<td>Ministry Wikipedia</td>
-						<td>10 May 2022</td>
-						<td>Ministry</td>
-						<td>$5300</td>
-						<td>
-							<img src='imgs/team-01.png' alt='' />
-							<img src='imgs/team-02.png' alt='' />
-							<img src='imgs/team-03.png' alt='' />
-							<img src='imgs/team-05.png' alt='' />
-						</td>
-						<td>
-							<span
-								class='label btn-shape bg-orange c-white'
-							>Pending</span>
-						</td>
-					</tr>
-					<tr>
-						<td>Elzero Shop</td>
-						<td>12 Oct 2021</td>
-						<td>Elzero Company</td>
-						<td>$1500</td>
-						<td>
-							<img src='imgs/team-01.png' alt='' />
-							<img src='imgs/team-02.png' alt='' />
-							<img src='imgs/team-05.png' alt='' />
-						</td>
-						<td>
-							<span class='label btn-shape bg-blue c-white'>In
-								Progress</span>
-						</td>
-					</tr>
-					<tr>
-						<td>Bouba App</td>
-						<td>05 Sep 2021</td>
-						<td>Bouba</td>
-						<td>$800</td>
-						<td>
-							<img src='imgs/team-02.png' alt='' />
-							<img src='imgs/team-03.png' alt='' />
-						</td>
-						<td>
-							<span
-								class='label btn-shape bg-green c-white'
-							>Completed</span>
-						</td>
-					</tr>
-					<tr>
-						<td>Mahmoud Website</td>
-						<td>22 May 2021</td>
-						<td>Mahmoud</td>
-						<td>$600</td>
-						<td>
-							<img src='imgs/team-01.png' alt='' />
-							<img src='imgs/team-02.png' alt='' />
-						</td>
-						<td>
-							<span
-								class='label btn-shape bg-green c-white'
-							>Completed</span>
-						</td>
-					</tr>
-					<tr>
-						<td>Sayed Website</td>
-						<td>24 May 2021</td>
-						<td>Sayed</td>
-						<td>$300</td>
-						<td>
-							<img src='imgs/team-01.png' alt='' />
-							<img src='imgs/team-03.png' alt='' />
-						</td>
-						<td>
-							<span
-								class='label btn-shape bg-red c-white'
-							>Rejected</span>
-						</td>
-					</tr>
-					<tr>
-						<td>Arena Application</td>
-						<td>01 Mar 2021</td>
-						<td>Arena Company</td>
-						<td>$2600</td>
-						<td>
-							<img src='imgs/team-01.png' alt='' />
-							<img src='imgs/team-02.png' alt='' />
-							<img src='imgs/team-03.png' alt='' />
-							<img src='imgs/team-04.png' alt='' />
-						</td>
-						<td>
-							<span
-								class='label btn-shape bg-green c-white'
-							>Completed</span>
-						</td>
-					</tr>
 				</tbody>
 			</table>
 		</div>

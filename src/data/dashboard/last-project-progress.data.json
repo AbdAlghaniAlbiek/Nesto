@@ -1,37 +1,27 @@
 [
 	{
 		"progress": "Got The Project",
-		"completedStatus": {
-			"isCompleted": true,
-			"isWorkingOn": false
-		}
+		"isCompleted": true,
+		"isWorkingOn": false
 	},
 	{
 		"progress": "Started The Project",
-		"completedStatus": {
-			"isCompleted": true,
-			"isWorkingOn": false
-		}
+		"isCompleted": true,
+		"isWorkingOn": false
 	},
 	{
 		"progress": "The Project About To Finish",
-		"completedStatus": {
-			"isCompleted": true,
-			"isWorkingOn": false
-		}
+		"isCompleted": true,
+		"isWorkingOn": false
 	},
 	{
 		"progress": "Test The Project",
-		"completedStatus": {
-			"isCompleted": false,
-			"isWorkingOn": true
-		}
+		"isCompleted": false,
+		"isWorkingOn": true
 	},
 	{
 		"progress": "Got The Project",
-		"completedStatus": {
-			"isCompleted": false,
-			"isWorkingOn": false
-		}
+		"isCompleted": false,
+		"isWorkingOn": false
 	}
 ]

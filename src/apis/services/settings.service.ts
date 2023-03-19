@@ -5,74 +5,106 @@ import { join } from 'path';
 @Injectable()
 export class SettingsService {
 	public siteControlData() {
-		readFile(
-			join(__dirname, '../..', 'data/settings/site-control.data.json'),
-			'utf8',
-			(err, data) => {
-				if (err) throw new InternalServerErrorException(`${err}`);
+		return new Promise((resolve, reject) => {
+			readFile(
+				join(
+					__dirname,
+					'../..',
+					'data/settings/site-control.data.json'
+				),
+				'utf8',
+				(err, data) => {
+					if (err) throw new InternalServerErrorException(`${err}`);
 
-				return data;
-			}
-		);
+					resolve(JSON.parse(data));
+				}
+			);
+		});
 	}
 
 	public generalInfoData() {
-		readFile(
-			join(__dirname, '../..', 'data/settings/general-info.data.json'),
-			'utf8',
-			(err, data) => {
-				if (err) throw new InternalServerErrorException(`${err}`);
+		return new Promise((resolve, reject) => {
+			readFile(
+				join(
+					__dirname,
+					'../..',
+					'data/settings/general-info.data.json'
+				),
+				'utf8',
+				(err, data) => {
+					if (err) throw new InternalServerErrorException(`${err}`);
 
-				return data;
-			}
-		);
+					resolve(JSON.parse(data));
+				}
+			);
+		});
 	}
 
 	public securityInfoData() {
-		readFile(
-			join(__dirname, '../..', 'data/settings/security-info.data.json'),
-			'utf8',
-			(err, data) => {
-				if (err) throw new InternalServerErrorException(`${err}`);
+		return new Promise((resolve, reject) => {
+			readFile(
+				join(
+					__dirname,
+					'../..',
+					'data/settings/security-info.data.json'
+				),
+				'utf8',
+				(err, data) => {
+					if (err) throw new InternalServerErrorException(`${err}`);
 
-				return data;
-			}
-		);
+					resolve(JSON.parse(data));
+				}
+			);
+		});
 	}
 
 	public socialInfoData() {
-		readFile(
-			join(__dirname, '../..', 'data/settings/social-info.data.json'),
-			'utf8',
-			(err, data) => {
-				if (err) throw new InternalServerErrorException(`${err}`);
+		return new Promise((resolve, reject) => {
+			readFile(
+				join(__dirname, '../..', 'data/settings/social-info.data.json'),
+				'utf8',
+				(err, data) => {
+					if (err) throw new InternalServerErrorException(`${err}`);
 
-				return data;
-			}
-		);
+					resolve(JSON.parse(data));
+				}
+			);
+		});
 	}
 
 	public widgetsControlData() {
-		readFile(
-			join(__dirname, '../..', 'data/settings/security-info.data.json'),
-			'utf8',
-			(err, data) => {
-				if (err) throw new InternalServerErrorException(`${err}`);
+		return new Promise((resolve, reject) => {
+			readFile(
+				join(
+					__dirname,
+					'../..',
+					'data/settings/security-info.data.json'
+				),
+				'utf8',
+				(err, data) => {
+					if (err) throw new InternalServerErrorException(`${err}`);
 
-				return data;
-			}
-		);
+					resolve(JSON.parse(data));
+				}
+			);
+		});
 	}
 
 	public backupManagerData() {
-		readFile(
-			join(__dirname, '../..', 'data/settings/backup-manager.data.json'),
-			'utf8',
-			(err, data) => {
-				if (err) throw new InternalServerErrorException(`${err}`);
+		return new Promise((resolve, reject) => {
+			readFile(
+				join(
+					__dirname,
+					'../..',
+					'data/settings/backup-manager.data.json'
+				),
+				'utf8',
+				(err, data) => {
+					if (err) throw new InternalServerErrorException(`${err}`);
 
-				return data;
-			}
-		);
+					resolve(JSON.parse(data));
+				}
+			);
+		});
 	}
 }
