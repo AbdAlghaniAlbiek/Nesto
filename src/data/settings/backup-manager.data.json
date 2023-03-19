@@ -1,0 +1,12 @@
+{
+	"backupTime": {
+		"daily": true,
+		"weekly": false,
+		"monthly": false
+	},
+	"backupServer": {
+		"migaman": true,
+		"zero": false,
+		"sigma": false
+	}
+}

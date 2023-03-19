@@ -1,0 +1,14 @@
+{
+	"money": {
+		"profits": 20000,
+		"precentage": 80
+	},
+	"projects": {
+		"number": 24,
+		"precentage": 55
+	},
+	"team": {
+		"number": 12,
+		"precentage": 75
+	}
+}

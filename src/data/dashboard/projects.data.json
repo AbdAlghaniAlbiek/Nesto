@@ -1,0 +1,64 @@
+[
+	{
+		"name": "Ministry Wikipedia",
+		"finishDate": "10 May 2022",
+		"client": "Ministry",
+		"price": 5300,
+		"team": [
+			"images/team-01.png",
+			"images/team-02.png",
+			"images/team-03.png",
+			"images/team-05.png"
+		],
+		"status": "pending"
+	},
+	{
+		"name": "Elzero Shop",
+		"finishDate": "12 Oct 2021",
+		"client": "Elzero Company",
+		"price": 1500,
+		"team": [
+			"images/team-01.png",
+			"images/team-02.png",
+			"images/team-05.png"
+		],
+		"status": "inProgress"
+	},
+	{
+		"name": "Bouba App",
+		"finishDate": "05 Sep 2021",
+		"client": "Bouba",
+		"price": 800,
+		"team": ["images/team-02.png", "images/team-03.png"],
+		"status": "completed"
+	},
+	{
+		"name": "Mahmoud Website",
+		"finishDate": "22 May 2021",
+		"client": "Mahmoud",
+		"price": 600,
+		"team": ["images/team-01.png", "images/team-02.png"],
+		"status": "completed"
+	},
+	{
+		"name": "Sayed Website",
+		"finishDate": "24 May 2021",
+		"client": "Sayed",
+		"price": 300,
+		"team": ["images/team-01.png", "images/team-03.png"],
+		"status": "rejected"
+	},
+	{
+		"name": "Arena Application",
+		"finishDate": "01 Mar 2021",
+		"client": "Arena Company",
+		"price": 2600,
+		"team": [
+			"images/team-01.png",
+			"images/team-02.png",
+			"images/team-03.png",
+			"images/team-04.png"
+		],
+		"status": "completed"
+	}
+]

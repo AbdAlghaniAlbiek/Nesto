@@ -1,0 +1,27 @@
+[
+	{
+		"task": "Record One New Video",
+		"explaination": "Record Python Create Exe Project",
+		"isDone": false
+	},
+	{
+		"task": "ًWrite Article",
+		"explaination": "Write Low Level vs High Level Languages",
+		"isDone": false
+	},
+	{
+		"task": "Finish Project",
+		"explaination": "Publish Academy Programming Project",
+		"isDone": false
+	},
+	{
+		"task": "Attend The Meeting",
+		"explaination": "Attend The Project Business Analysis Meeting",
+		"isDone": true
+	},
+	{
+		"task": "Finish Lesson",
+		"explaination": "Finish Teaching Flex Box",
+		"isDone": false
+	}
+]

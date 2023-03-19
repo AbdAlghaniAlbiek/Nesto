@@ -1,0 +1,30 @@
+{
+	"normal": [
+		{
+			"reminder": "Check My Tasks List",
+			"day": "28/09/2022",
+			"time": "12:00"
+		}
+	],
+	"okay": [
+		{
+			"reminder": "Check My Projects",
+			"day": "26/10/2022",
+			"time": "12:00"
+		}
+	],
+	"warning": [
+		{
+			"reminder": "Call All My Clients",
+			"day": "05/11/2022",
+			"time": "12:00"
+		}
+	],
+	"danger": [
+		{
+			"reminder": "Finish The Development Workshop",
+			"day": "20/12/2022",
+			"time": "12:00"
+		}
+	]
+}

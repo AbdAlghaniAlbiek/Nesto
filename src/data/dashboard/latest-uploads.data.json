@@ -1,0 +1,38 @@
+[
+	{
+		"fileImage": "images/pdf.svg",
+		"filename": "my-file.pdf",
+		"owner": "Elzero",
+		"fileSize": 2.9
+	},
+	{
+		"fileImage": "images/avi.svg",
+		"filename": "My-Video-File.avi",
+		"owner": "Admin",
+		"fileSize": 4.9
+	},
+	{
+		"fileImage": "images/psd.svg",
+		"filename": "My-Psd-File.pdf",
+		"owner": "Osama",
+		"fileSize": 4.5
+	},
+	{
+		"fileImage": "images/zip.svg",
+		"filename": "My-Zip-File.pdf",
+		"owner": "User",
+		"fileSize": 8.9
+	},
+	{
+		"fileImage": "images/dll.svg",
+		"filename": "My-DLL-File.pdf",
+		"owner": "Admin",
+		"fileSize": 4.9
+	},
+	{
+		"fileImage": "images/esp.svg",
+		"filename": "My-Eps-File.pdf",
+		"owner": "Designer",
+		"fileSize": 8.9
+	}
+]
