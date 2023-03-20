@@ -1,0 +1,26 @@
+[
+	{
+		"techSection": "Programming",
+		"count": 220
+	},
+	{
+		"techSection": "JavaScript",
+		"count": 180
+	},
+	{
+		"techSection": "PHP",
+		"count": 160
+	},
+	{
+		"techSection": "Code",
+		"count": 145
+	},
+	{
+		"techSection": "Design",
+		"count": 110
+	},
+	{
+		"techSection": "Logic",
+		"count": 95
+	}
+]

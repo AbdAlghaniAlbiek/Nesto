@@ -1,0 +1,26 @@
+[
+	{
+		"image": "images/news-01.png",
+		"title": "Created SASS section",
+		"description": "New SASS Examples & Tutorials",
+		"date": 3
+	},
+	{
+		"image": "images/news-02.png",
+		"title": "Team Increased",
+		"description": "3 Developers Joined The Team",
+		"date": 7
+	},
+	{
+		"image": "images/news-03.png",
+		"title": "Added Payment Gateway",
+		"description": "Many New payment Gateways Added",
+		"date": 3
+	},
+	{
+		"image": "images/news-03.png",
+		"title": "Added Payment Gateway",
+		"description": "Many New payment Gateways Added",
+		"date": 6
+	}
+]

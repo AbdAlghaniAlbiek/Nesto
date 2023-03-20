@@ -1,0 +1,451 @@
+<div class='content w-full'>
+	<h1 class='p-relative gap-20'>Dashboard</h1>
+	<div class='wrapper d-grid gap-20'>
+		<!-- Start Welcome Widget -->
+		<div class='welcome bg-white rad-10 txt-c-mobile block-mobile'>
+			<div class='intro p-20 d-flex space-between bg-eee'>
+				<div>
+
+					<h2 class='m-0'>Welcome</h2>
+					<p class='c-grey mt-5'>{{welcome.firstname}}</p>
+				</div>
+				<img class='hide-mobile' src='images/welcome.png' alt='' />
+			</div>
+			<img src='{{welcome.image}}' alt='' class='avatar' />
+			<div class='body txt-c d-flex p-20 mt-20 mb-20 block-mobile'>
+				<div>
+					{{fullname welcome.firstname welcome.lastname}}
+					<span class='d-block c-grey fs-14 mt-10'>Developer</span>
+				</div>
+				<div>
+					{{welcome.projects}}
+					<span class='d-block c-grey fs-14 mt-10'>Projects</span>
+				</div>
+				<div>
+					${{welcome.earned}}
+					<span class='d-block c-grey fs-14 mt-10'>Earned</span>
+				</div>
+			</div>
+			<a
+				href='/profile'
+				class='visit d-block fs-14 bg-blue c-white w-fit btn-shape'
+			>Profile</a>
+
+		</div>
+		<!-- End Welcome Widget -->
+
+		<!-- Start Quick Draft Widget -->
+		<div class='quick-draft p-20 bg-white rad-10'>
+			<h2 class='mt-0 mb-10'>Quick Draft</h2>
+			<p class='mt-0 mb-20 c-grey fs-15'>
+				Write A Draft For Your Ideas
+			</p>
+			<form style="margin-bottom: 0;">
+				<input
+					class='d-block mb-20 w-full p-10 b-none bg-eee rad-6'
+					type='text'
+					placeholder='Title'
+				/>
+				<textarea
+					class='d-block mb-20 w-full p-10 b-none bg-eee rad-6'
+					placeholder='Your Thought'
+				></textarea>
+				<input
+					class='save d-block fs-14 bg-blue c-white b-none w-fit btn-shape'
+					type='submit'
+					value='Save'
+				/>
+			</form>
+		</div>
+		<!-- End Quick Draft Widget -->
+
+		<!-- Start Targets Widget -->
+		<div class='targets p-20 bg-white rad-10'>
+			<h2 class='mt-0 mb-10'>Yearly Targets</h2>
+			<p class='mt-0 mb-20 c-grey fs-15'>
+				Targets Of The Year
+			</p>
+			<div class='target-row mb-20 blue center-flex'>
+				<div class='icon center-flex'>
+					<i class='fa-solid fa-dollar-sign fa-lg c-blue'></i>
+				</div>
+				<div class='details'>
+					<span class='fs-14 c-grey'>Money</span>
+					<span
+						class='d-block mt-5 mb-10 fw-bold'
+					>${{yearlyTargets.money.profits}}</span>
+					<div class='progress p-relative'>
+						<span class='bg-blue blue' style='width: 80%'>
+							<span
+								class='bg-blue'
+							>{{yearlyTargets.money.precentage}}%</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class='target-row mb-20 center-flex orange'>
+				<div class='icon center-flex'>
+					<i class='fa-solid fa-code fa-lg c-orange'></i>
+				</div>
+				<div class='details'>
+					<span class='fs-14 c-grey'>Projects</span>
+					<span
+						class='d-block mt-5 mb-10 fw-bold'
+					>{{yearlyTargets.projects.number}}</span>
+					<div class='progress p-relative'>
+						<span class='bg-orange orange' style='width: 55%'>
+							<span
+								class='bg-orange'
+							>{{yearlyTargets.projects.precentage}}%</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class='target-row mb-20 center-flex green'>
+				<div class='icon center-flex'>
+					<i class='fa-solid fa-user fa-lg c-green'></i>
+				</div>
+				<div class='details'>
+					<span class='fs-14 c-grey'>Team</span>
+					<span
+						class='d-block mt-5 mb-10 fw-bold'
+					>{{yearlyTargets.team.number}}</span>
+					<div class='progress p-relative'>
+						<span class='bg-green green' style='width: 75%'>
+							<span
+								class='bg-green'
+							>{{yearlyTargets.team.precentage}}%</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Targets Widget -->
+
+		<!-- Start Ticket Widget -->
+		<div class='tickets p-20 bg-white rad-10'>
+			<h2 class='mt-0 mb-10'>Tickets Statistics</h2>
+			<p class='mt-0 mb-20 c-grey fs-15'>
+				Everything About Support Tickets
+			</p>
+			<div class='d-flex txt-c gap-20 f-wrap'>
+				<div class='box p-20 rad-10 fs-13 c-grey'>
+					<i
+						class='fa-regular fa-rectangle-list fa-2x mb-10 c-orange'
+					></i>
+					<span
+						class='d-block c-black fw-bold fs-25 mb-5'
+					>{{ticketsStatistics.total}}</span>
+					Total
+				</div>
+				<div class='box p-20 rad-10 fs-13 c-grey'>
+					<i class='fa-solid fa-spinner fa-2x mb-10 c-blue'></i>
+					<span
+						class='d-block c-black fw-bold fs-25 mb-5'
+					>{{ticketsStatistics.pending}}</span>
+					Pending
+				</div>
+				<div class='box p-20 rad-10 fs-13 c-grey'>
+					<i
+						class='fa-regular fa-circle-check fa-2x mb-10 c-green'
+					></i>
+					<span
+						class='d-block c-black fw-bold fs-25 mb-5'
+					>{{ticketsStatistics.closed}}</span>
+					Closed
+				</div>
+				<div class='box p-20 rad-10 fs-13 c-grey'>
+					<i
+						class='fa-regular fa-rectangle-xmark fa-2x mb-10 c-red'
+					></i>
+					<span
+						class='d-block c-black fw-bold fs-25 mb-5'
+					>{{ticketsStatistics.deleted}}</span>
+					Deleted
+				</div>
+			</div>
+		</div>
+		<!-- End Ticket Widget -->
+
+		<!-- Start Latest News Widget -->
+		<div class='latest-news p-20 bg-white rad-10 txt-c-mobile'>
+			<h2 class='mt-0 mb-20'>Latest News</h2>
+			{{#each latestNews}}
+				<div class='news-row d-flex align-center'>
+					<img src='{{image}}' alt='' />
+					<div class='info'>
+						<h3>{{title}}</h3>
+						<p class='m-0 fs-14 c-grey'>
+							{{description}}
+						</p>
+					</div>
+					<div class='btn-shape bg-eee fs-13 label'>
+						{{date}}
+						Days Ago
+					</div>
+				</div>
+			{{/each}}
+		</div>
+		<!-- End Latest News Widget -->
+
+		<!-- Start Tasks Widget -->
+		<div class='tasks p-20 bg-white rad-10'>
+			<h2 class='mt-0 mb-20'>Latest Tasks</h2>
+			{{#each latestTasks}}
+					<div  {{#if isDone}} class='task-row between-flex done' {{/if}} class='task-row between-flex'>
+						<div class='info'>
+							<h3 class='mt-0 mb-5 fs-15'>
+								{{task}}
+							</h3>
+							<p class='m-0 c-grey'>
+								{{explaination}}
+							</p>
+						</div>
+						<i class='fa-regular fa-trash-can delete'></i>
+					</div>
+			{{/each}}
+		</div>
+		<!-- End Tasks -->
+
+		<!-- Start Top Search Word Widget -->
+		<div class='search-items p-20 bg-white rad-10'>
+			<h2 class='mt-0 mb-20'>Top Search Items</h2>
+			<div class="items-head d-flex space-between c-grey mb-10">
+              <div>Keyword</div>
+              <div>Search Count</div>
+            </div>
+			{{#each topSearchItems}}
+				<div class='items d-flex space-between pt-15 pb-15'>
+					<div>{{techSection}}</div>
+					<div class="bg-eee fs-13 btn-shape">{{count}}</div>
+				</div>
+			{{/each}}
+		</div>
+		<!-- End Top Search Word Widget -->
+
+		<!-- Start Latest Uploads Widget -->
+		<div class='latest-uploads p-20 bg-white rad-10'>
+			<h2 class='mt-0 mb-20'>Latest Uploads</h2>
+			<ul class='m-0' style='margin-bottom: 10px;'>
+				{{#each latestUploads}}
+					<li class='between-flex pb-10 mb-10'>
+						<div class='d-flex align-center'>
+							<img class='mr-10' src='{{fileImage}}' alt='' />
+							<div>
+								<span class='d-block'>{{filename}}</span>
+								<span class='fs-15 c-grey'>{{owner}}</span>
+							</div>
+						</div>
+						<div class='bg-eee btn-shape fs-13'>{{fileSize}}mb</div>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+		<!-- End Latest Uploads Widget -->
+
+		
+		<!-- Start Last Project Progress Widget -->
+		<div class='last-project p-20 bg-white rad-10 p-relative'>
+			<h2 class='mt-0 mb-20'>Last Project Progress</h2>
+			<ul class='m-0 p-relative'>
+				{{#each lastProjctProgress}}
+					{{#if isCompleted}}
+							<li class='mt-25 d-flex align-center done'>
+								{{progress}}
+							</li>
+						{{else}}
+							{{#if isWorkingOn}}
+								<li class='mt-25 d-flex align-center current'>
+									{{progress}}
+								</li>
+							{{else}}
+								<li class='mt-25 d-flex align-center'>
+									{{progress}}
+								</li>
+							{{/if}}
+						{{/if}}
+				{{/each}}
+			</ul>
+			<img
+				class='launch-icon hide-mobile'
+				src='images/project.png'
+				alt=''
+			/>
+		</div>
+		<!-- End Last Project Progress Widget -->
+
+		<!-- Start Reminders Widget -->
+		<div class='reminders p-20 bg-white rad-10 p-relative'>
+			<h2 class='mt-0 mb-25'>Reminders</h2>
+			<ul class='m-0'>
+				{{#each reminders.normal}}
+					<li class='d-flex align-center mt-15'>
+						<span class='key bg-blue mr-15 d-block rad-half'></span>
+						<div class='pl-15 blue'>
+							<p class='fs-14 fw-bold mt-0 mb-5'>
+								{{reminder}}
+							</p>
+							<span class='fs-13 c-grey'>{{day}}
+								-
+								{{time}}am</span>
+						</div>
+					</li>
+				{{/each}}
+				{{#each reminders.okay}}
+					<li class='d-flex align-center mt-15'>
+						<span
+							class='key bg-green mr-15 d-block rad-half'
+						></span>
+						<div class='pl-15 green'>
+							<p class='fs-14 fw-bold mt-0 mb-5'>
+								{{reminder}}
+							</p>
+							<span class='fs-13 c-grey'>{{day}}
+								-
+								{{time}}am</span>
+						</div>
+					</li>
+				{{/each}}
+				{{#each reminders.warning}}
+					<li class='d-flex align-center mt-15'>
+						<span
+							class='key bg-orange mr-15 d-block rad-half'
+						></span>
+						<div class='pl-15 orange'>
+							<p class='fs-14 fw-bold mt-0 mb-5'>
+								{{reminder}}
+							</p>
+							<span class='fs-13 c-grey'>{{day}}
+								-
+								{{time}}am</span>
+						</div>
+					</li>
+				{{/each}}
+				{{#each reminders.danger}}
+					<li class='d-flex align-center mt-15'>
+						<span class='key bg-red mr-15 d-block rad-half'></span>
+						<div class='pl-15 red'>
+							<p class='fs-14 fw-bold mt-0 mb-5'>
+								{{reminder}}
+							</p>
+							<span class='fs-13 c-grey'>{{day}}
+								-
+								{{time}}am</span>
+						</div>
+					</li>
+				{{/each}}
+
+			</ul>
+		</div>
+		<!-- End Reminders Widget -->
+
+		
+		<!-- Start Latest Post Widget -->
+		<div class='latest-post p-20 bg-white rad-10 p-relative'>
+			<h2 class='mt-0 mb-25'>Latest Post</h2>
+			<div class='top d-flex align-center'>
+				<img class='avatar mr-15' src='{{lastPost.image}}' alt='' />
+				<div class='info'>
+					<span class='d-block mb-5 fw-bold'>{{fullname
+							lastPost.firstname
+							lastPost.lastname
+						}}</span>
+					<span class='c-grey'>About
+						{{lastPost.date}}
+						Hours Ago</span>
+				</div>
+			</div>
+			<div class='post-content txt-c-mobile pt-20 pb-20 mt-20 mb-20'>
+				{{lastPost.description}}
+			</div>
+			<div class='post-stats between-flex c-grey'>
+				<div>
+					<i class='fa-regular fa-heart'></i>
+					<span>{{lastPost.likes}}K</span>
+				</div>
+				<div>
+					<i class='fa-regular fa-comments'></i>
+					<span>{{lastPost.commnets}}</span>
+				</div>
+			</div>
+		</div>
+		<!-- End Latest Post Widget -->
+
+		
+		<!-- Start Social Media Stats Widget -->
+		<div class='social-media p-20 bg-white rad-10 p-relative'>
+			<h2 class='mt-0 mb-25'>Social Media Stats</h2>
+			<div class='box twitter p-15 p-relative mb-10 between-flex'>
+				<i
+					class='fa-brands fa-twitter fa-2x c-white h-full center-flex'
+				></i>
+				<span>{{socialMediaStats.twitterFollowers}} Followers</span>
+				<a class='fs-13 c-white btn-shape' href='#'>Follow</a>
+			</div>
+			<div class='box facebook p-15 p-relative mb-10 between-flex'>
+				<i
+					class='fa-brands fa-facebook-f fa-2x c-white h-full center-flex'
+				></i>
+				<span>{{socialMediaStats.FacebookLikes}} Like</span>
+				<a class='fs-13 c-white btn-shape' href='#'>Like</a>
+			</div>
+			<div class='box youtube p-15 p-relative mb-10 between-flex'>
+				<i
+					class='fa-brands fa-youtube fa-2x c-white h-full center-flex'
+				></i>
+				<span>{{socialMediaStats.YoutubeSubs}} Subs</span>
+				<a class='fs-13 c-white btn-shape' href='#'>Subscribe</a>
+			</div>
+			<div class='box linkedin p-15 p-relative mb-10 between-flex'>
+				<i
+					class='fa-brands fa-linkedin fa-2x c-white h-full center-flex'
+				></i>
+				<span>{{socialMediaStats.LinkedinFollowers}} Followers</span>
+				<a class='fs-13 c-white btn-shape' href='#'>Follow</a>
+			</div>
+		</div>
+		<!-- Start End Media Stats Widget -->
+
+	</div>
+	<!-- Start Projects Table -->
+	<div class='projects p-20 bg-white rad-10 m-20'>
+		<h2 class='mt-0 mb-20'>Projects</h2>
+		<div class='responsive-table'>
+			<table class='fs-15 w-full'>
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>Finish Date</td>
+						<td>Client</td>
+						<td>Price</td>
+						<td>Team</td>
+						<td>Status</td>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each projects}}
+						<tr>
+							<td>{{name}}</td>
+							<td>{{finishedDate}}</td>
+							<td>{{client}}</td>
+							<td>${{price}}</td>
+							<td>
+								{{#each team}}
+									<img src='{{this}}' alt='' />
+								{{/each}}
+							</td>
+							<td>
+								<span
+									class='label btn-shape
+										{{projectStatus status}}
+										c-white'
+								>{{status}}</span>
+							</td>
+						</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!-- End Projects Table -->
+</div>

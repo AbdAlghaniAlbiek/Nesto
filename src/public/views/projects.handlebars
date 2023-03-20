@@ -1,0 +1,36 @@
+<div class='content w-full'>
+	<h1 class='p-relative'>Projects</h1>
+	<div class='projects-page d-grid m-20 gap-20'>
+		{{#each data}}
+			<div class='project bg-white p-20 rad-6 p-relative'>
+				<span class='date fs-13 c-grey'>{{createdAt}}</span>
+				<h4 class='m-0'>{{title}}</h4>
+				<p class='c-grey mt-10 mb-10 fs-14'>
+					{{description}}
+				</p>
+				<div class='team'>
+					{{#each contributors}}
+						<a href='#'><img src={{this}} alt='' /></a>
+					{{/each}}
+				</div>
+				<div class='do d-flex'>
+					{{#each tags}}
+						<span class='fs-13 rad-6 bg-eee'>{{this}}</span>
+					{{/each}}
+				</div>
+				<div class='info between-flex'>
+					<div class='prog bg-eee'>
+						<span
+							class='{{progressColor}}'
+							style='width: {{progressValue}}%'
+						></span>
+					</div>
+					<div class='fs-14 c-grey'>
+						<i class='fa-solid fa-dollar-sign'></i>
+						{{cost}}
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</div>

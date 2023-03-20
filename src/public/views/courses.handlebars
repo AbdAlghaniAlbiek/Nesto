@@ -1,0 +1,29 @@
+<div class='content w-full'>
+	<h1 class='p-relative'>Courses</h1>
+	<div class='courses-page d-grid m-20 gap-20'>
+		{{#each data}}
+			<div class='course bg-white rad-6 p-relative'>
+				<img class='cover' src='{{heroImage}}' alt='' />
+				<img class='instructor' src='{{personImage}}' alt='' />
+				<div class='p-20'>
+					<h4 class='m-0'>{{title}}</h4>
+					<p class='description c-grey mt-15 fs-14'>
+						{{description}}
+					</p>
+				</div>
+				<div class='info p-15 p-relative between-flex'>
+					<span class='title bg-blue c-white btn-shape'>Course Info</span>
+					<span class='c-grey'>
+						<i class='fa-regular fa-user'></i>
+						{{enrollers}}
+					</span>
+					<span class='c-grey'>
+						<i class='fa-solid fa-dollar-sign'></i>
+						{{cost}}
+					</span>
+				</div>
+			</div>
+		{{/each}}
+
+	</div>
+</div>

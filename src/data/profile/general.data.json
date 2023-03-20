@@ -1,0 +1,25 @@
+{
+	"generalInformation": {
+		"fullname": "Abdulghani Albaik",
+		"level": 20,
+		"rating": 550,
+		"country": "Syria",
+		"gender": "Male",
+		"image": "images/avatar.png"
+	},
+	"personalInformation": {
+		"email": "example@gmail.com",
+		"dateOfBirth": "28/10/1982",
+		"phoneNumber": "019123456789"
+	},
+	"jonInformation": {
+		"title": "Backend Developer",
+		"yearsOfExperice": 3,
+		"ProgrammingLang": "JavaScript"
+	},
+	"billingInformation": {
+		"paymentMethod": "paypal",
+		"subscription": "Monthly",
+		"email": "example@gmail.com"
+	}
+}

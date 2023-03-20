@@ -1,0 +1,47 @@
+[
+	{
+		"type": "Free",
+		"cost": 0.0,
+		"color": "bg-green",
+		"accessAllTextLessons": true,
+		"accessAllVideosLessons": true,
+		"appearOnLeaderboard": true,
+		"browseContentWithoutAds": false,
+		"accessAllAssignments": false,
+		"getDailyPrizes": false,
+		"earnCertificate": false,
+		"1gBSpaceForHostingFiles": false,
+		"accessBadgeSystem": false,
+		"isCurrentPlan": false
+	},
+	{
+		"type": "Basic",
+		"cost": 7.99,
+		"color": "bg-blue",
+		"accessAllTextLessons": true,
+		"accessAllVideosLessons": true,
+		"appearOnLeaderboard": true,
+		"browseContentWithoutAds": true,
+		"accessAllAssignments": true,
+		"getDailyPrizes": true,
+		"earnCertificate": true,
+		"1gBSpaceForHostingFiles": true,
+		"accessBadgeSystem": false,
+		"isCurrentPlan": false
+	},
+	{
+		"type": "Premium",
+		"cost": 19.99,
+		"color": "bg-orange",
+		"accessAllTextLessons": true,
+		"accessAllVideosLessons": true,
+		"appearOnLeaderboard": true,
+		"browseContentWithoutAds": true,
+		"accessAllAssignments": true,
+		"getDailyPrizes": true,
+		"earnCertificate": true,
+		"1gBSpaceForHostingFiles": true,
+		"accessBadgeSystem": true,
+		"isCurrentPlan": true
+	}
+]
