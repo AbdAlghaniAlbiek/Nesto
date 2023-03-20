@@ -1,0 +1,18 @@
+{
+	"psd": {
+		"filesNumber": 130,
+		"totalSize": 6.5
+	},
+	"images": {
+		"filesNumber": 115,
+		"totalSize": 3.5
+	},
+	"word": {
+		"filesNumber": 110,
+		"totalSize": 3.2
+	},
+	"csv": {
+		"filesNumber": 99,
+		"totalSize": 2.9
+	}
+}

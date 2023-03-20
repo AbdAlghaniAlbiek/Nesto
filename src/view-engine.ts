@@ -2,6 +2,7 @@ import { NestExpressApplication } from '@nestjs/platform-express';
 import * as exphbs from 'express-handlebars';
 import { join } from 'path';
 import { ProjectStatus } from './helpers/constants/dasboard.constant';
+import { Plans } from './helpers/constants/plans.contant';
 
 export function setViewEngine(app: NestExpressApplication) {
 	app.useStaticAssets(join(__dirname, 'public'));
@@ -25,5 +26,12 @@ const helpers = {
 		else if (status === ProjectStatus.InProgress) return 'bg-blue';
 		else if (status === ProjectStatus.Rejected) return 'bg-red';
 		else return 'bg-orange';
+	},
+	borderColor: (planType: string) => {
+		if (planType.toLocaleLowerCase() === Plans.Free.toLowerCase())
+			return 'green';
+		else if (planType.toLocaleLowerCase() === Plans.Basic.toLowerCase())
+			return 'blue';
+		else return 'orange';
 	}
 };

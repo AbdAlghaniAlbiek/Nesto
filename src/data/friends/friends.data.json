@@ -1,0 +1,112 @@
+[
+	{
+		"image": "images/friend-01.jpg",
+		"firstname": "Ahmed",
+		"lastname": "Nasser",
+		"specialist": "JavaScript Developer",
+		"friendsNumber": 99,
+		"projectsNumber": 15,
+		"articlesNumber": 25,
+		"joinedAt": "02/10/2021",
+		"isVIP": true
+	},
+	{
+		"image": "images/friend-02.jpg",
+		"firstname": "Omar",
+		"lastname": "Fathy",
+		"specialist": "Cloud Developer",
+		"friendsNumber": 30,
+		"projectsNumber": 11,
+		"articlesNumber": 12,
+		"joinedAt": "02/08/2020",
+		"isVIP": false
+	},
+	{
+		"image": "images/friend-01.jpg",
+		"firstname": "Omar",
+		"lastname": "Ahmed",
+		"specialist": "Mobile Developer",
+		"friendsNumber": 80,
+		"projectsNumber": 20,
+		"articlesNumber": 18,
+		"joinedAt": "02/06/2020",
+		"isVIP": false
+	},
+	{
+		"image": "images/friend-04.jpg",
+		"firstname": "Shady",
+		"lastname": "Nabil",
+		"specialist": "Back-End Developer",
+		"friendsNumber": 70,
+		"projectsNumber": 30,
+		"articlesNumber": 18,
+		"joinedAt": "28/06/2020",
+		"isVIP": false
+	},
+	{
+		"image": "images/friend-05.jpg",
+		"firstname": "Mohamed",
+		"lastname": "Ibrahim",
+		"specialist": "Algorithm Developer",
+		"friendsNumber": 80,
+		"projectsNumber": 30,
+		"articlesNumber": 18,
+		"joinedAt": "28/08/2020",
+		"isVIP": false
+	},
+	{
+		"image": "images/friend-04.jpg",
+		"firstname": "Amr",
+		"lastname": "Hendawy",
+		"specialist": "Back-End Developer",
+		"friendsNumber": 70,
+		"projectsNumber": 30,
+		"articlesNumber": 18,
+		"joinedAt": "28/06/2020",
+		"isVIP": false
+	},
+	{
+		"image": "images/friend-02.jpg",
+		"firstname": "Mahmoud",
+		"lastname": "Adel",
+		"specialist": "Cloud Developer",
+		"friendsNumber": 30,
+		"projectsNumber": 11,
+		"articlesNumber": 12,
+		"joinedAt": "02/08/2020",
+		"isVIP": false
+	},
+	{
+		"image": "images/friend-05.jpg",
+		"firstname": "Ahmed",
+		"lastname": "Abuzaid",
+		"specialist": "Content Creator",
+		"friendsNumber": 80,
+		"projectsNumber": 30,
+		"articlesNumber": 18,
+		"joinedAt": "28/08/2020",
+		"isVIP": true
+	},
+	{
+		"image": "images/friend-01.jpg",
+		"firstname": "Gareeb",
+		"lastname": "Elshiekh",
+		"specialist": "JavaScript Developer",
+		"friendsNumber": 99,
+		"projectsNumber": 15,
+		"articlesNumber": 25,
+		"joinedAt": "02/10/2021",
+		"isVIP": true
+	},
+	{
+		"image": "images/friend-03.jpg",
+		"firstname": "Hamza",
+		"lastname": "",
+		"specialist": "Front-End Developer",
+		"friendsNumber": 80,
+		"projectsNumber": 20,
+		"articlesNumber": 18,
+		"joinedAt": "02/06/2020",
+		"isVIP": false
+	}
+]

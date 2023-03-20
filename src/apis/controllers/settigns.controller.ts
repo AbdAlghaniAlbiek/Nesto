@@ -7,7 +7,7 @@ export class SettingsController {
 
 	@Get('')
 	@Render('settings')
-	public async getSettingsData() {
+	public async index() {
 		return {
 			siteControl: await this.settingService.siteControlData(),
 			generalInfo: await this.settingService.generalInfoData(),

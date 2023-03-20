@@ -1,0 +1,22 @@
+{
+	"store": {
+		"activity": "Bought The Mastering Python Course",
+		"time": "18:10",
+		"day": "yesterday"
+	},
+	"academy": {
+		"activity": "Got The PHP Certificate",
+		"time": "16:05",
+		"day": "yesterday"
+	},
+	"badges": {
+		"activity": "Unlocked The 10 Skills Badge",
+		"time": "18:05",
+		"day": "yesterday"
+	},
+	"acheivment": {
+		"activity": "Finishing learning Nestjs framework",
+		"time": "12:05",
+		"day": "yesterday"
+	}
+}
