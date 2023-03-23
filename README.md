@@ -1,4 +1,15 @@
-# ![nest_logo](https://AbdAlghaniAlbiek/nesto/src/public/logo/nesto.svg) Nesto ![Twitter Follow](https://img.shields.io/twitter/follow/AbdAlbiek?style=social) ![GitHub](https://img.shields.io/github/license/AbdAlghaniAlbiek/nesto)
+# Nesto 
+
+<div style="display:flex; justify-content:center; align-items:center;"> 
+    <img style="width: 80px; height: 80px" src="https://github.com/AbdAlghaniAlbiek/nesto/blob/main/src/public/logo/nesto.svg"; alt="nesto-logo";/>
+    <img style="width: 80px; height: 80px" src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="NestJs";/> 
+</div>
+<div style="display:flex; justify-content: center;">
+    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/AbdAlbiek?style=social">
+    <img alt="GitHub" src="https://img.shields.io/github/license/AbdAlghaniAlbiek/herafi-nestjs-backend">
+</div>
+
+## Introuction
 
 Nesto is **MVC** website that interact with NestJS backend for retreiving data and inject it in the DOM using [Handlebars](https://handlebarsjs.com/) template engine.
 
