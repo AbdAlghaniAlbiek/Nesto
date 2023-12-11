@@ -15,6 +15,12 @@ Nesto is **MVC** website that interact with NestJS backend for retreiving data a
 
 This project build above [Fourth_Template](https://github.com/ElzeroWebSchool/HTML_And_CSS_Template_Four) for the awesome Osama Elzero, with integrating NestJS modules and services that makes very big push forward for the Osama's main repo converting it to MVC web app, and by implementing `handlebars` templates inside html pages and with this it cut short the repetition of cards inside html pages.
 
+## Screenshots 
+> You can see all screenshots from [here](https://github.com/AbdAlghaniAlbiek/nesto/tree/main/screenshots)
+
+![Dashboard](https://github.com/AbdAlghaniAlbiek/nesto/blob/main/screenshots/Dashboard.png)
+![Files](https://github.com/AbdAlghaniAlbiek/nesto/blob/main/screenshots/Project.png)
+
 ## Setup
 
 1. `git clone https://github.com/AbdAlghaniAlbiek/nesto.git`
